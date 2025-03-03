@@ -1,0 +1,4843 @@
+{
+	"info": {
+		"_postman_id": "72eebc68-6b16-43e0-ac4d-a3099251f80c",
+		"name": "DummyJSON API TEST",
+		"description": "1\\. Sukurti Postman Collection pagal [{{base_url}}/](https://{{base_url}}/)  \n2\\. Pagal API dokumentaciją apsirašyti visus request.  \n3\\. Aprašyti testus:        \n3.1 Patikrinti kiekvieno request status kodą        \n3.2 Patikrinti kiekvieno request formatą       \n3.3 Patikrinti, ar kiekvienas response JSON neturi 'error elemento'  \n4\\. Parašyti testą '[{{base_url}}/comments'](https://{{base_url}}/comments') request'ui, kuris patikrina, kiek komentarų turi Post, kurio id=465. Sukelti šią kolekciją ir eksportuotus testavimo rezultatus į GitHubEndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40512262"
+	},
+	"item": [
+		{
+			"name": "Dynamic Image",
+			"item": [
+				{
+					"name": "Gen. picture",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/image/150",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"image",
+								"150"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gen. 200x100",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/image/200x100",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"image",
+								"200x100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Custom text",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/image/400x200/008080/ffffff?text=Hello+Peter",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"image",
+								"400x200",
+								"008080",
+								"ffffff"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "Hello+Peter"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Custom BG & TxtC",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/image/400x200/282828",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"image",
+								"400x200",
+								"282828"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Diff. file formats",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/image/400x200?type=webp&text=I+am+a+webp+image",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"image",
+								"400x200"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "webp"
+								},
+								{
+									"key": "text",
+									"value": "I+am+a+webp+image"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Custom font family",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/image/400x200/282828?fontFamily=pacifico&text=I+am+a+pacifico+font",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"image",
+								"400x200",
+								"282828"
+							],
+							"query": [
+								{
+									"key": "fontFamily",
+									"value": "pacifico"
+								},
+								{
+									"key": "text",
+									"value": "I+am+a+pacifico+font"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Custom font size",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/image/400x200/008080/ffffff?text=Hello+Peter!&fontSize=16",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"image",
+								"400x200",
+								"008080",
+								"ffffff"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "Hello+Peter!"
+								},
+								{
+									"key": "fontSize",
+									"value": "16"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create identicon",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/icon/abc123/150",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"icon",
+								"abc123",
+								"150"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "GetToken",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Save tokens to environment\", function () {\r",
+									"    const jsonData = pm.response.json();\r",
+									"    pm.environment.set(\"AccessToken\", jsonData.AccessToken);\r",
+									"    pm.environment.set(\"RefreshToken\", jsonData.refreshToken);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "michaelw",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "michaelwpass",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"emilys\",\r\n    \"password\": \"emilyspass\",\r\n    \"credentials\": \"include\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get auth user",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/me",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RefreshToken",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Save tokens to environment\", function () {\r",
+									"    const jsonData = pm.response.json();\r",
+									"    pm.environment.set(\"AccessToken\", jsonData.AccessToken);\r",
+									"    pm.environment.set(\"RefreshToken\", jsonData.refreshToken);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \r\n    \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3Mzc2MTY4MzAsImV4cCI6MTc0MDIwODgzMH0.1MPgftDCI3RPbO39qYYU342VLM6s4dqJ3SRaK3nm8Og\", \r\n    \"expiresInMins\": 30 \r\n\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/refresh",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "GetProducts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LimitSkip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products?limit=10&skip=10&select=title,price",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "skip",
+									"value": "10"
+								},
+								{
+									"key": "select",
+									"value": "title,price"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sort",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products?sortBy=title&order=asc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "title"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product categories",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/categories",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CategoryList",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/category-list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"category-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProduct1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProduct",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"TEST\",\r\n    \"description\": \"The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.\",\r\n    \"category\": \"beauty\",\r\n    \"price\": 9.99,\r\n    \"discountPercentage\": 7.17,\r\n    \"rating\": 4.94,\r\n    \"stock\": 5,\r\n    \"tags\": [\r\n        \"beauty\",\r\n        \"mascara\"\r\n    ],\r\n    \"brand\": \"Essence\",\r\n    \"sku\": \"RCH45Q1A\",\r\n    \"weight\": 2,\r\n    \"dimensions\": {\r\n        \"width\": 23.17,\r\n        \"height\": 14.43,\r\n        \"depth\": 28.01\r\n    },\r\n    \"warrantyInformation\": \"1 month warranty\",\r\n    \"shippingInformation\": \"Ships in 1 month\",\r\n    \"availabilityStatus\": \"Low Stock\",\r\n    \"reviews\": [\r\n        {\r\n            \"rating\": 2,\r\n            \"comment\": \"Very unhappy with my purchase!\",\r\n            \"date\": \"2024-05-23T08:56:21.618Z\",\r\n            \"reviewerName\": \"John Doe\",\r\n            \"reviewerEmail\": \"john.doe@x.dummyjson.com\"\r\n        },\r\n        {\r\n            \"rating\": 2,\r\n            \"comment\": \"Not as described!\",\r\n            \"date\": \"2024-05-23T08:56:21.618Z\",\r\n            \"reviewerName\": \"Nolan Gonzalez\",\r\n            \"reviewerEmail\": \"nolan.gonzalez@x.dummyjson.com\"\r\n        },\r\n        {\r\n            \"rating\": 5,\r\n            \"comment\": \"Very satisfied!\",\r\n            \"date\": \"2024-05-23T08:56:21.618Z\",\r\n            \"reviewerName\": \"Scarlett Wright\",\r\n            \"reviewerEmail\": \"scarlett.wright@x.dummyjson.com\"\r\n        }\r\n    ],\r\n    \"returnPolicy\": \"30 days return policy\",\r\n    \"minimumOrderQuantity\": 24,\r\n    \"meta\": {\r\n        \"createdAt\": \"2024-05-23T08:56:21.618Z\",\r\n        \"updatedAt\": \"2024-05-23T08:56:21.618Z\",\r\n        \"barcode\": \"9164035109868\",\r\n        \"qrCode\": \"https://assets.dummyjson.com/public/qr-code.png\"\r\n    },\r\n    \"images\": [\r\n        \"https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/1.png\"\r\n    ],\r\n    \"thumbnail\": \"https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/products/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchProduct Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"new title updated\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/products/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByCategory Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"method\":\"DELETE\"\r\n}\r\n\r\n//\"isDeleted\": true,",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/products/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchProduct",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/search?q=phone",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "phone"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByCategory",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/products/category/smartphones",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"products",
+								"category",
+								"smartphones"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carts",
+			"item": [
+				{
+					"name": "Carts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/carts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cart1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/carts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByUser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/carts/user/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCart",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userId\": \"1\",\r\n  \"products\": [\r\n    {\r\n      \"id\": 144,\r\n      \"quantity\": 4\r\n    },\r\n    {\r\n      \"id\": 98,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/carts/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Product categories Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"merge\": true,\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/carts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"method\": \"DELETE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/carts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"carts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Recipes",
+			"item": [
+				{
+					"name": "Rcp",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SingleRcp",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipes/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipes/search?q=Margherita",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipes",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Margherita"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LimitSkip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipes?limit=10&skip=10&select=name,image",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipes"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "skip",
+									"value": "10"
+								},
+								{
+									"key": "select",
+									"value": "name,image"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sort",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipes?sortBy=name&order=asc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipes"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "name"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllTags",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipes/tags",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipes",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByTag",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipes/tag/Pakistani",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipes",
+								"tag",
+								"Pakistani"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByMeal",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/recipes/meal-type/snack",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"recipes",
+								"meal-type",
+								"snack"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Users",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Log-in",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"emilys\",\r\n  \"password\": \"emilyspass\",\r\n  \"expiresInMins\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "authUser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"emilys\",\r\n  \"password\": \"emilyspass\",\r\n  \"expiresInMins\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/user/me",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"user",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "single user",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users/search?q=John",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "John"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/filter?key=hair.color&value=Brown",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "hair.color"
+								},
+								{
+									"key": "value",
+									"value": "Brown"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Skip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users?limit=5&skip=10&select=firstName,age",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "5"
+								},
+								{
+									"key": "skip",
+									"value": "10"
+								},
+								{
+									"key": "select",
+									"value": "firstName,age"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LimitSkip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users?sortBy=firstName&order=asc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "firstName"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users/6/carts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"6",
+								"carts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostByID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users/5/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"5",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TodoByID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/users/5/todos",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"5",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "NewUser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Muhammad\",\r\n  \"lastName\": \"Ovi\",\r\n  \"age\": 2504241141414\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"lastName\": \"Owais\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"method\": \"DELETE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/users/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Posts",
+			"item": [
+				{
+					"name": "AllPosts",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SingleP",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchP",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/search?q=love",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "love"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LimitSkip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts?limit=10&skip=10&select=title,reactions,userId",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "skip",
+									"value": "10"
+								},
+								{
+									"key": "select",
+									"value": "title,reactions,userId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sort",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts?sortBy=title&order=asc",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "title"
+								},
+								{
+									"key": "order",
+									"value": "asc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllPByTag",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/tags",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"tags"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TagList",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/tag-list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"tag-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostByTag",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/tag/life",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"tag",
+								"life"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByUserID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/user/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostsComm",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/posts/1/comments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"1",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddNewP",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Love is just chemical reaction mechanism to create bond for succesful reproduction cycle.\",\r\n    \"userId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/posts/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdatePost",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"I think I should shift to the moon(hope so)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/posts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"method\": \"DELETE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/posts/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"posts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "GetComs",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Count comments for postId 46\", function () {\r",
+									"    const jsonData = pm.response.json();\r",
+									"    const commentsForPost46 = jsonData.comments.filter(comment => comment.postId === 46);\r",
+									"    const count = commentsForPost46.length;\r",
+									"    pm.expect(count).to.be.at.least(0);\r",
+									"    console.log(`komentarų skaicius postId 46: ${count}`);\r",
+									"});\r",
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/comments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SingleCom",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/comments/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LimitSkip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/comments?limit=10&skip=10&select=body,postId",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "skip",
+									"value": "10"
+								},
+								{
+									"key": "select",
+									"value": "body,postId"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ByPostID",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/comments/post/6",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments",
+								"post",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCom",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"This makes all sense to me!\",\r\n    \"postId\": 3,\r\n    \"userId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/comments/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCom",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"I think I should shift to the moon ASAP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/comments/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Del",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"method\": \"DELETE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/comments/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Todos",
+			"item": [
+				{
+					"name": "All",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/todos",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/todos/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"todos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Random",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/todos/random",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"todos",
+								"random"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LimSkip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/todos?limit=3&skip=10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"todos"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "3"
+								},
+								{
+									"key": "skip",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllByUid",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/todos/user/5",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"todos",
+								"user",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddNew",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"todo\": \"Use DummyJSON in the project\",\r\n    \"completed\": \"false\",\r\n    \"userId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/todos/add",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"todos",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"completed\": \"false\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/todos/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"todos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AllByUid Copy",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"method\": \"DELETE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/todos/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"todos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Quotes",
+			"item": [
+				{
+					"name": "AllQuotes",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/quotes",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quotes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/quotes/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quotes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RandomQ",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/quotes/random",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quotes",
+								"random"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LimitSkip",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/quotes?limit=3&skip=10",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"quotes"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "3"
+								},
+								{
+									"key": "skip",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mock HTTP",
+			"item": [
+				{
+					"name": "Mock HTTP",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/http/200",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"http",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CustomHTTP",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"// Check if the status code is 200\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// Check if Content-Type is one of json, webp, jpg, or png\r",
+									"pm.test(\"Content-Type is one of json, webp, jpg, or png\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.match(/(json|webp|jpg|png)/);\r",
+									"});\r",
+									"\r",
+									"// Check that the response does not contain an 'error' element (only for JSON responses)\r",
+									"pm.test(\"Response does not contain 'error' element\", function () {\r",
+									"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+									"\r",
+									"    // Proceed only if the response is JSON\r",
+									"    if (contentType && contentType.includes(\"application/json\")) {\r",
+									"        const responseJson = pm.response.json(); // Parse the JSON response\r",
+									"        pm.expect(responseJson).to.not.have.property('error');\r",
+									"    } else {\r",
+									"        console.warn(\"Response is not JSON. Content-Type:\", contentType);\r",
+									"    }\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/http/404/Hello_Peter",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"http",
+								"404",
+								"Hello_Peter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					"pm.test(\"Status code is 200, 201\", function () {\r",
+					"    pm.response.to.have.status(200, 201);\r",
+					"});\r",
+					"\r",
+					"// Test for Content-Type (validates format)\r",
+					"pm.test(\"Content-Type is valid\", function () {\r",
+					"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+					"    pm.expect(contentType).to.match(/(application\\/json|image\\/webp|image\\/jpg|image\\/png)/);\r",
+					"});\r",
+					"\r",
+					"// Test to ensure no 'error' element in JSON response\r",
+					"pm.test(\"Response does not contain 'error' element\", function () {\r",
+					"    const contentType = pm.response.headers.get(\"Content-Type\");\r",
+					"\r",
+					"    // Only check for JSON responses\r",
+					"    if (contentType && contentType.includes(\"application/json\")) {\r",
+					"        const responseJson = pm.response.json();\r",
+					"        pm.expect(responseJson).to.not.have.property('error');\r",
+					"    } else {\r",
+					"        console.warn(\"Response is not JSON. Skipping error check.\");\r",
+					"    }\r",
+					"});\r",
+					"\r",
+					"pm.test(\"Save tokens to environment\", function () {\r",
+					"    const jsonData = pm.response.json();\r",
+					"    pm.environment.set(\"AccessToken\", jsonData.AccessToken);\r",
+					"    pm.environment.set(\"RefreshToken\", jsonData.RefreshToken);\r",
+					"});"
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://dummyjson.com"
+		},
+		{
+			"key": "AccessToken",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "RefreshToken",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

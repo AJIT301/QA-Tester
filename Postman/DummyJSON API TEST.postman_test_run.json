@@ -1,0 +1,5116 @@
+{
+	"id": "76755818-2a8c-4e18-a31a-d82aa746111d",
+	"name": "DummyJSON API TEST",
+	"timestamp": "2025-01-24T14:30:27.943Z",
+	"collection_id": "40512262-72eebc68-6b16-43e0-ac4d-a3099251f80c",
+	"folder_id": 0,
+	"environment_id": "40512262-b49dbf84-1668-46cb-9369-b9b36e009420",
+	"totalPass": 558,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-01-24T14:30:11.142Z",
+	"totalFail": 24,
+	"results": [
+		{
+			"id": "2ae71f5e-4f1d-453d-8f3a-caf4755364fe",
+			"name": "Gen. picture",
+			"url": "https://dummyjson.com/image/150",
+			"time": 127,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": false,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": false,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "96474fbe-04c9-4ac1-ae76-ce87da105897",
+			"name": "Gen. 200x100",
+			"url": "https://dummyjson.com/image/200x100",
+			"time": 126,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": false,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				126
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": false,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "4d8067f3-4640-40e7-bad7-fcf73224eaaf",
+			"name": "Custom text",
+			"url": "https://dummyjson.com/image/400x200/008080/ffffff?text=Hello+Peter",
+			"time": 128,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": false,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				128
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": false,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "0b47e086-ccfa-4277-8fc0-44d18e5dbf87",
+			"name": "Custom BG & TxtC",
+			"url": "https://dummyjson.com/image/400x200/282828",
+			"time": 130,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": false,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				130
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": false,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "d03c2e5a-28e8-4e0a-a516-5864fd923040",
+			"name": "Diff. file formats",
+			"url": "https://dummyjson.com/image/400x200?type=webp&text=I+am+a+webp+image",
+			"time": 145,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": false,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				145
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": false,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "d2164839-453f-403f-b2c6-0c425ab6c4d1",
+			"name": "Custom font family",
+			"url": "https://dummyjson.com/image/400x200/282828?fontFamily=pacifico&text=I+am+a+pacifico+font",
+			"time": 134,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": false,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				134
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": false,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "3b38466b-93f8-420a-bcd4-074a60bf3dd0",
+			"name": "Custom font size",
+			"url": "https://dummyjson.com/image/400x200/008080/ffffff?text=Hello+Peter!&fontSize=16",
+			"time": 129,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": false,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				129
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": false,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "7625a36c-53a0-4100-b2ef-36e800f34e3f",
+			"name": "Create identicon",
+			"url": "https://dummyjson.com/icon/abc123/150",
+			"time": 122,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": false,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				122
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": false,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "e45c94da-a625-4cf0-b601-f41b2c365f19",
+			"name": "GetToken",
+			"url": "https://dummyjson.com/auth/login",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true
+				}
+			]
+		},
+		{
+			"id": "ea840320-07be-4003-971b-3ef1000cf6e8",
+			"name": "Get auth user",
+			"url": "https://dummyjson.com/auth/me",
+			"time": 121,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code is 200, 201": false,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": false,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true
+				}
+			]
+		},
+		{
+			"id": "c3ad3cfc-f954-4cf6-980f-c9d3658cf18b",
+			"name": "RefreshToken",
+			"url": "https://dummyjson.com/auth/refresh",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true
+				}
+			]
+		},
+		{
+			"id": "36f36e7d-0d45-4c46-a18e-05c8abe8dc96",
+			"name": "GetProducts",
+			"url": "https://dummyjson.com/products",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "7d91e063-f190-42e8-bd27-0b03141c443d",
+			"name": "LimitSkip",
+			"url": "https://dummyjson.com/products?limit=10&skip=10&select=title,price",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "456f9f40-6c21-4dfd-acbd-3f217dad25b0",
+			"name": "Sort",
+			"url": "https://dummyjson.com/products?sortBy=title&order=asc",
+			"time": 123,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				123
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "5108fc26-c1fa-4f24-abd4-c63c440b218e",
+			"name": "Product categories",
+			"url": "https://dummyjson.com/products/categories",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "4ad34496-00ae-4e33-bf1a-91822a6647ac",
+			"name": "CategoryList",
+			"url": "https://dummyjson.com/products/category-list",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "229cf8cd-852e-44f6-94ff-c725a9f66f18",
+			"name": "GetProduct1",
+			"url": "https://dummyjson.com/products/1",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "ecd20b22-69c3-4d9a-a3cb-463ac25167d6",
+			"name": "AddProduct",
+			"url": "https://dummyjson.com/products/add",
+			"time": 118,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200, 201": false,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": false,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": false,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": false,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "1e42a067-81d3-427b-bcaf-38f280e723a5",
+			"name": "SearchProduct Copy",
+			"url": "https://dummyjson.com/products/1",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "e3b07290-76b6-4a33-a7bf-d98d3265af87",
+			"name": "GetByCategory Copy",
+			"url": "https://dummyjson.com/products/1",
+			"time": 127,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "db9c44c1-59c4-4bbb-98c5-976f92821593",
+			"name": "SearchProduct",
+			"url": "https://dummyjson.com/products/search?q=phone",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "fb514702-d16e-4eea-8789-76695819c620",
+			"name": "GetByCategory",
+			"url": "https://dummyjson.com/products/category/smartphones",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "7a021ae4-58c5-45b8-9eb3-4b207d8b0be5",
+			"name": "Carts",
+			"url": "https://dummyjson.com/carts",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "2a463ed7-3edb-4e9d-97c3-c077ae7619d6",
+			"name": "Cart1",
+			"url": "https://dummyjson.com/carts/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "bf0f9191-f76d-48ea-9f1e-b4131f46e89e",
+			"name": "ByUser",
+			"url": "https://dummyjson.com/carts/user/5",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "a757cd2e-810c-413c-be30-f41c16bd23e0",
+			"name": "AddCart",
+			"url": "https://dummyjson.com/carts/add",
+			"time": 118,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200, 201": false,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": false,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": false,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": false,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "0061872c-9116-43f4-9d0a-6d1bea8a1a19",
+			"name": "Product categories Copy",
+			"url": "https://dummyjson.com/carts/1",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "0576eeef-85df-4f88-8f7c-e379b79ce05d",
+			"name": "Delete",
+			"url": "https://dummyjson.com/carts/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "691da552-2d03-4fd2-bfdb-9900f459105f",
+			"name": "Rcp",
+			"url": "https://dummyjson.com/recipes",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "272a169d-0bd6-4843-83dd-c2c36b433840",
+			"name": "SingleRcp",
+			"url": "https://dummyjson.com/recipes/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "742be1a5-09ff-41cb-a2fc-511a897ffdf1",
+			"name": "Search",
+			"url": "https://dummyjson.com/recipes/search?q=Margherita",
+			"time": 122,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				122
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "021f8edb-0cd7-401a-8e8a-f09cbba1d09e",
+			"name": "LimitSkip",
+			"url": "https://dummyjson.com/recipes?limit=10&skip=10&select=name,image",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "ea79d1f1-ebd2-4313-86dd-ee2996edef43",
+			"name": "Sort",
+			"url": "https://dummyjson.com/recipes?sortBy=name&order=asc",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "dc538ce4-eb52-4c9c-9087-3f0f467e8211",
+			"name": "AllTags",
+			"url": "https://dummyjson.com/recipes/tags",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "fb452b69-63b3-4590-9fc7-65d425805a42",
+			"name": "ByTag",
+			"url": "https://dummyjson.com/recipes/tag/Pakistani",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "f53c471c-27d2-487b-98b2-9d541d754da4",
+			"name": "ByMeal",
+			"url": "https://dummyjson.com/recipes/meal-type/snack",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "196e4655-969e-472e-b1de-d3be2bb4f56e",
+			"name": "Users",
+			"url": "https://dummyjson.com/users",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "1a3f508d-1dc7-4282-85de-16559a86fa60",
+			"name": "Log-in",
+			"url": "https://dummyjson.com/user/login",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "a69ebe64-0a24-401c-8284-68b7433fc1fa",
+			"name": "authUser",
+			"url": "https://dummyjson.com/user/me",
+			"time": 127,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				127
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "de5f8e12-68ba-4f2a-84ec-07f13c660e49",
+			"name": "single user",
+			"url": "https://dummyjson.com/users/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "1e05e798-a5e3-4785-b920-0af94dcf842a",
+			"name": "Search",
+			"url": "https://dummyjson.com/users/search?q=John",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "10f82ce8-b686-424d-9229-0481050d8356",
+			"name": "Filter",
+			"url": "https://dummyjson.com/users/filter?key=hair.color&value=Brown",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "f29d15a2-ea82-4b10-9b0c-107c8b5ba76d",
+			"name": "Skip",
+			"url": "https://dummyjson.com/users?limit=5&skip=10&select=firstName,age",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "c8ce5dbf-93b8-4e08-a09b-a4c2bf8a7fb7",
+			"name": "LimitSkip",
+			"url": "https://dummyjson.com/users?sortBy=firstName&order=asc",
+			"time": 123,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				123
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "6b2cdc3e-50a5-41c0-bd96-d5598dcbd445",
+			"name": "ByID",
+			"url": "https://dummyjson.com/users/6/carts",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "408e9592-3aeb-4c8e-8a64-342d6b0d0b7c",
+			"name": "PostByID",
+			"url": "https://dummyjson.com/users/5/posts",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "c73a4608-85c0-44ef-9457-2c25272f2944",
+			"name": "TodoByID",
+			"url": "https://dummyjson.com/users/5/todos",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "aac7783f-a67d-42ce-a4eb-3d03a278bb79",
+			"name": "NewUser",
+			"url": "https://dummyjson.com/users/add",
+			"time": 119,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200, 201": false,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": false,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": false,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": false,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "2edf1c91-25e1-4d6c-89e0-82573a13f168",
+			"name": "UpdateUser",
+			"url": "https://dummyjson.com/users/2",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "b0ce965d-6f58-44dc-9a57-bbbec6c27f9f",
+			"name": "Delete",
+			"url": "https://dummyjson.com/users/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "a1e2cfaa-a1e4-47ac-a070-7a47a89e65e6",
+			"name": "AllPosts",
+			"url": "https://dummyjson.com/posts",
+			"time": 121,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				121
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "ae5b4d39-00ee-418f-b4ec-08e8c252ec0f",
+			"name": "SingleP",
+			"url": "https://dummyjson.com/posts/1",
+			"time": 124,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				124
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "71356969-043c-422d-98cf-5e6af4e7c64e",
+			"name": "SearchP",
+			"url": "https://dummyjson.com/posts/search?q=love",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "c61c6721-12da-4aa6-a25f-61a71e23321c",
+			"name": "LimitSkip",
+			"url": "https://dummyjson.com/posts?limit=10&skip=10&select=title,reactions,userId",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "97b3daa9-e43b-4ac6-b1f6-3c12143f7952",
+			"name": "Sort",
+			"url": "https://dummyjson.com/posts?sortBy=title&order=asc",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "4588e2ed-c35f-4af8-b6c4-7c3f6f184305",
+			"name": "AllPByTag",
+			"url": "https://dummyjson.com/posts/tags",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "310a887a-3e82-4f9f-a3e0-0e64a6f6eafa",
+			"name": "TagList",
+			"url": "https://dummyjson.com/posts/tag-list",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "ea94ea8e-9c49-4d34-baa4-876186c144d3",
+			"name": "PostByTag",
+			"url": "https://dummyjson.com/posts/tag/life",
+			"time": 126,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				126
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "d09365e7-da85-474b-8f91-9c617e153fa0",
+			"name": "ByUserID",
+			"url": "https://dummyjson.com/posts/user/5",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "7fa696c9-83af-469e-90d2-acd51ee8365a",
+			"name": "PostsComm",
+			"url": "https://dummyjson.com/posts/1/comments",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "ec6f3aaa-5bc5-4a32-a283-1c88042f7779",
+			"name": "AddNewP",
+			"url": "https://dummyjson.com/posts/add",
+			"time": 120,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200, 201": false,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": false,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": false,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": false,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "b25c4589-f221-42a1-a894-b8739c7e2e8d",
+			"name": "UpdatePost",
+			"url": "https://dummyjson.com/posts/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "186544bd-6235-488a-9efe-d0acea3d809b",
+			"name": "Delete",
+			"url": "https://dummyjson.com/posts/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "1055f913-e504-41f3-b6a0-d80e4111d63e",
+			"name": "GetComs",
+			"url": "https://dummyjson.com/comments",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Count comments for postId 46": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Count comments for postId 46": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Count comments for postId 46": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "b4d81435-7800-4eec-9804-3bb4e3db3a42",
+			"name": "SingleCom",
+			"url": "https://dummyjson.com/comments/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "968f0d93-3d69-43d2-b2fd-d73b360c28f3",
+			"name": "LimitSkip",
+			"url": "https://dummyjson.com/comments?limit=10&skip=10&select=body,postId",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "b5923607-6b2f-46a4-bc65-1ba40bc718bf",
+			"name": "ByPostID",
+			"url": "https://dummyjson.com/comments/post/6",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "b542ad5e-2cbd-4de8-b45a-3cedf45c7331",
+			"name": "AddCom",
+			"url": "https://dummyjson.com/comments/add",
+			"time": 118,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200, 201": false,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": false,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": false,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": false,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "222b8ecb-9693-43a8-a8fe-5feff2e35ae7",
+			"name": "UpdateCom",
+			"url": "https://dummyjson.com/comments/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "9e472cb0-b407-481e-a3f8-f161b6876a77",
+			"name": "Del",
+			"url": "https://dummyjson.com/comments/1",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "c4eab79a-289f-4988-8555-5e1fbf473b6f",
+			"name": "All",
+			"url": "https://dummyjson.com/todos",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "afd1d0c4-3519-425f-90ba-d03e8d981092",
+			"name": "Single",
+			"url": "https://dummyjson.com/todos/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "65118535-32e6-422c-9575-c7a2129ba64d",
+			"name": "Random",
+			"url": "https://dummyjson.com/todos/random",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "47a940fd-53f0-46ff-b182-4e17047f9044",
+			"name": "LimSkip",
+			"url": "https://dummyjson.com/todos?limit=3&skip=10",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "0e92285c-db31-46b0-a0d3-17715422b223",
+			"name": "AllByUid",
+			"url": "https://dummyjson.com/todos/user/5",
+			"time": 117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				117
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "d5287ca3-30e4-485e-be95-31fee839df92",
+			"name": "AddNew",
+			"url": "https://dummyjson.com/todos/add",
+			"time": 118,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200, 201": false,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": false,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": false,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": false,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "99889ad5-37b5-4a2d-8f9d-e34276c042be",
+			"name": "Update",
+			"url": "https://dummyjson.com/todos/1",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "e6de5c50-05b2-4b03-98fb-bfdd28e0a919",
+			"name": "AllByUid Copy",
+			"url": "https://dummyjson.com/todos/1",
+			"time": 117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				117
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "6438b5cc-671b-43cb-9f14-be63ffd387c7",
+			"name": "AllQuotes",
+			"url": "https://dummyjson.com/quotes",
+			"time": 119,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				119
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "552dcb3a-affd-4e57-9ba6-90a4f9f55d24",
+			"name": "Single",
+			"url": "https://dummyjson.com/quotes/1",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "28f54c75-faad-4b6a-96b1-5f9538028852",
+			"name": "RandomQ",
+			"url": "https://dummyjson.com/quotes/random",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "7dde6fe2-f0b2-4df3-93d9-10bcae157150",
+			"name": "LimitSkip",
+			"url": "https://dummyjson.com/quotes?limit=3&skip=10",
+			"time": 118,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "a086fa62-fa9c-482a-a7e3-86b941a24b17",
+			"name": "Mock HTTP",
+			"url": "https://dummyjson.com/http/200",
+			"time": 117,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200, 201": true,
+				"Content-Type is valid": true,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": true,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				117
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": true,
+					"Content-Type is valid": true,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": true,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		},
+		{
+			"id": "ea76dde6-9f0c-489c-a207-938fa5aa8ebb",
+			"name": "CustomHTTP",
+			"url": "https://dummyjson.com/http/404/Hello_Peter",
+			"time": 118,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200, 201": false,
+				"Content-Type is valid": false,
+				"Response does not contain 'error' element": true,
+				"Save tokens to environment": true,
+				"Status code is 200": false,
+				"Content-Type is one of json, webp, jpg, or png": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200, 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is valid": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response does not contain 'error' element": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Save tokens to environment": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is one of json, webp, jpg, or png": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				118
+			],
+			"allTests": [
+				{
+					"Status code is 200, 201": false,
+					"Content-Type is valid": false,
+					"Response does not contain 'error' element": true,
+					"Save tokens to environment": true,
+					"Status code is 200": false,
+					"Content-Type is one of json, webp, jpg, or png": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 10114,
+	"collection": {
+		"requests": [
+			{
+				"id": "2ae71f5e-4f1d-453d-8f3a-caf4755364fe",
+				"method": "GET"
+			},
+			{
+				"id": "96474fbe-04c9-4ac1-ae76-ce87da105897",
+				"method": "GET"
+			},
+			{
+				"id": "4d8067f3-4640-40e7-bad7-fcf73224eaaf",
+				"method": "GET"
+			},
+			{
+				"id": "0b47e086-ccfa-4277-8fc0-44d18e5dbf87",
+				"method": "GET"
+			},
+			{
+				"id": "d03c2e5a-28e8-4e0a-a516-5864fd923040",
+				"method": "GET"
+			},
+			{
+				"id": "d2164839-453f-403f-b2c6-0c425ab6c4d1",
+				"method": "GET"
+			},
+			{
+				"id": "3b38466b-93f8-420a-bcd4-074a60bf3dd0",
+				"method": "GET"
+			},
+			{
+				"id": "7625a36c-53a0-4100-b2ef-36e800f34e3f",
+				"method": "GET"
+			},
+			{
+				"id": "e45c94da-a625-4cf0-b601-f41b2c365f19",
+				"method": "POST"
+			},
+			{
+				"id": "ea840320-07be-4003-971b-3ef1000cf6e8",
+				"method": "GET"
+			},
+			{
+				"id": "c3ad3cfc-f954-4cf6-980f-c9d3658cf18b",
+				"method": "POST"
+			},
+			{
+				"id": "36f36e7d-0d45-4c46-a18e-05c8abe8dc96",
+				"method": "GET"
+			},
+			{
+				"id": "7d91e063-f190-42e8-bd27-0b03141c443d",
+				"method": "GET"
+			},
+			{
+				"id": "456f9f40-6c21-4dfd-acbd-3f217dad25b0",
+				"method": "GET"
+			},
+			{
+				"id": "5108fc26-c1fa-4f24-abd4-c63c440b218e",
+				"method": "GET"
+			},
+			{
+				"id": "4ad34496-00ae-4e33-bf1a-91822a6647ac",
+				"method": "GET"
+			},
+			{
+				"id": "229cf8cd-852e-44f6-94ff-c725a9f66f18",
+				"method": "GET"
+			},
+			{
+				"id": "ecd20b22-69c3-4d9a-a3cb-463ac25167d6",
+				"method": "POST"
+			},
+			{
+				"id": "1e42a067-81d3-427b-bcaf-38f280e723a5",
+				"method": "PUT"
+			},
+			{
+				"id": "e3b07290-76b6-4a33-a7bf-d98d3265af87",
+				"method": "DELETE"
+			},
+			{
+				"id": "db9c44c1-59c4-4bbb-98c5-976f92821593",
+				"method": "GET"
+			},
+			{
+				"id": "fb514702-d16e-4eea-8789-76695819c620",
+				"method": "GET"
+			},
+			{
+				"id": "7a021ae4-58c5-45b8-9eb3-4b207d8b0be5",
+				"method": "GET"
+			},
+			{
+				"id": "2a463ed7-3edb-4e9d-97c3-c077ae7619d6",
+				"method": "GET"
+			},
+			{
+				"id": "bf0f9191-f76d-48ea-9f1e-b4131f46e89e",
+				"method": "GET"
+			},
+			{
+				"id": "a757cd2e-810c-413c-be30-f41c16bd23e0",
+				"method": "POST"
+			},
+			{
+				"id": "0061872c-9116-43f4-9d0a-6d1bea8a1a19",
+				"method": "PUT"
+			},
+			{
+				"id": "0576eeef-85df-4f88-8f7c-e379b79ce05d",
+				"method": "DELETE"
+			},
+			{
+				"id": "691da552-2d03-4fd2-bfdb-9900f459105f",
+				"method": "GET"
+			},
+			{
+				"id": "272a169d-0bd6-4843-83dd-c2c36b433840",
+				"method": "GET"
+			},
+			{
+				"id": "742be1a5-09ff-41cb-a2fc-511a897ffdf1",
+				"method": "GET"
+			},
+			{
+				"id": "021f8edb-0cd7-401a-8e8a-f09cbba1d09e",
+				"method": "GET"
+			},
+			{
+				"id": "ea79d1f1-ebd2-4313-86dd-ee2996edef43",
+				"method": "GET"
+			},
+			{
+				"id": "dc538ce4-eb52-4c9c-9087-3f0f467e8211",
+				"method": "GET"
+			},
+			{
+				"id": "fb452b69-63b3-4590-9fc7-65d425805a42",
+				"method": "GET"
+			},
+			{
+				"id": "f53c471c-27d2-487b-98b2-9d541d754da4",
+				"method": "GET"
+			},
+			{
+				"id": "196e4655-969e-472e-b1de-d3be2bb4f56e",
+				"method": "GET"
+			},
+			{
+				"id": "1a3f508d-1dc7-4282-85de-16559a86fa60",
+				"method": "POST"
+			},
+			{
+				"id": "a69ebe64-0a24-401c-8284-68b7433fc1fa",
+				"method": "GET"
+			},
+			{
+				"id": "de5f8e12-68ba-4f2a-84ec-07f13c660e49",
+				"method": "GET"
+			},
+			{
+				"id": "1e05e798-a5e3-4785-b920-0af94dcf842a",
+				"method": "GET"
+			},
+			{
+				"id": "10f82ce8-b686-424d-9229-0481050d8356",
+				"method": "GET"
+			},
+			{
+				"id": "f29d15a2-ea82-4b10-9b0c-107c8b5ba76d",
+				"method": "GET"
+			},
+			{
+				"id": "c8ce5dbf-93b8-4e08-a09b-a4c2bf8a7fb7",
+				"method": "GET"
+			},
+			{
+				"id": "6b2cdc3e-50a5-41c0-bd96-d5598dcbd445",
+				"method": "GET"
+			},
+			{
+				"id": "408e9592-3aeb-4c8e-8a64-342d6b0d0b7c",
+				"method": "GET"
+			},
+			{
+				"id": "c73a4608-85c0-44ef-9457-2c25272f2944",
+				"method": "GET"
+			},
+			{
+				"id": "aac7783f-a67d-42ce-a4eb-3d03a278bb79",
+				"method": "POST"
+			},
+			{
+				"id": "2edf1c91-25e1-4d6c-89e0-82573a13f168",
+				"method": "PUT"
+			},
+			{
+				"id": "b0ce965d-6f58-44dc-9a57-bbbec6c27f9f",
+				"method": "DELETE"
+			},
+			{
+				"id": "a1e2cfaa-a1e4-47ac-a070-7a47a89e65e6",
+				"method": "GET"
+			},
+			{
+				"id": "ae5b4d39-00ee-418f-b4ec-08e8c252ec0f",
+				"method": "GET"
+			},
+			{
+				"id": "71356969-043c-422d-98cf-5e6af4e7c64e",
+				"method": "GET"
+			},
+			{
+				"id": "c61c6721-12da-4aa6-a25f-61a71e23321c",
+				"method": "GET"
+			},
+			{
+				"id": "97b3daa9-e43b-4ac6-b1f6-3c12143f7952",
+				"method": "GET"
+			},
+			{
+				"id": "4588e2ed-c35f-4af8-b6c4-7c3f6f184305",
+				"method": "GET"
+			},
+			{
+				"id": "310a887a-3e82-4f9f-a3e0-0e64a6f6eafa",
+				"method": "GET"
+			},
+			{
+				"id": "ea94ea8e-9c49-4d34-baa4-876186c144d3",
+				"method": "GET"
+			},
+			{
+				"id": "d09365e7-da85-474b-8f91-9c617e153fa0",
+				"method": "GET"
+			},
+			{
+				"id": "7fa696c9-83af-469e-90d2-acd51ee8365a",
+				"method": "GET"
+			},
+			{
+				"id": "ec6f3aaa-5bc5-4a32-a283-1c88042f7779",
+				"method": "POST"
+			},
+			{
+				"id": "b25c4589-f221-42a1-a894-b8739c7e2e8d",
+				"method": "PUT"
+			},
+			{
+				"id": "186544bd-6235-488a-9efe-d0acea3d809b",
+				"method": "DELETE"
+			},
+			{
+				"id": "1055f913-e504-41f3-b6a0-d80e4111d63e",
+				"method": "GET"
+			},
+			{
+				"id": "b4d81435-7800-4eec-9804-3bb4e3db3a42",
+				"method": "GET"
+			},
+			{
+				"id": "968f0d93-3d69-43d2-b2fd-d73b360c28f3",
+				"method": "GET"
+			},
+			{
+				"id": "b5923607-6b2f-46a4-bc65-1ba40bc718bf",
+				"method": "GET"
+			},
+			{
+				"id": "b542ad5e-2cbd-4de8-b45a-3cedf45c7331",
+				"method": "POST"
+			},
+			{
+				"id": "222b8ecb-9693-43a8-a8fe-5feff2e35ae7",
+				"method": "PUT"
+			},
+			{
+				"id": "9e472cb0-b407-481e-a3f8-f161b6876a77",
+				"method": "DELETE"
+			},
+			{
+				"id": "c4eab79a-289f-4988-8555-5e1fbf473b6f",
+				"method": "GET"
+			},
+			{
+				"id": "afd1d0c4-3519-425f-90ba-d03e8d981092",
+				"method": "GET"
+			},
+			{
+				"id": "65118535-32e6-422c-9575-c7a2129ba64d",
+				"method": "GET"
+			},
+			{
+				"id": "47a940fd-53f0-46ff-b182-4e17047f9044",
+				"method": "GET"
+			},
+			{
+				"id": "0e92285c-db31-46b0-a0d3-17715422b223",
+				"method": "GET"
+			},
+			{
+				"id": "d5287ca3-30e4-485e-be95-31fee839df92",
+				"method": "POST"
+			},
+			{
+				"id": "99889ad5-37b5-4a2d-8f9d-e34276c042be",
+				"method": "PUT"
+			},
+			{
+				"id": "e6de5c50-05b2-4b03-98fb-bfdd28e0a919",
+				"method": "DELETE"
+			},
+			{
+				"id": "6438b5cc-671b-43cb-9f14-be63ffd387c7",
+				"method": "GET"
+			},
+			{
+				"id": "552dcb3a-affd-4e57-9ba6-90a4f9f55d24",
+				"method": "GET"
+			},
+			{
+				"id": "28f54c75-faad-4b6a-96b1-5f9538028852",
+				"method": "GET"
+			},
+			{
+				"id": "7dde6fe2-f0b2-4df3-93d9-10bcae157150",
+				"method": "GET"
+			},
+			{
+				"id": "a086fa62-fa9c-482a-a7e3-86b941a24b17",
+				"method": "GET"
+			},
+			{
+				"id": "ea76dde6-9f0c-489c-a207-938fa5aa8ebb",
+				"method": "GET"
+			}
+		]
+	}
+}
