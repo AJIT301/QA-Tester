@@ -1,0 +1,21 @@
+{
+    "name": "TesterAJ301",
+    "password": "3A$y.P4s$w.0R.d",
+    "day": "5",
+    "month": "August",
+    "year": "1992",
+    "firstName": "MrTester",
+    "lastName": "AJT Solutions",
+    "company": "AJT Solutions",
+    "address1": "Zoltán u. 16",
+    "address2": "Iguana Bar and Grill",
+    "country": "Canada",
+    "state": "Maharashtra",
+    "city": "Budapest",
+    "zipcode": "1054",
+    "mobile": "9876543210",
+    "card": "4242424242424242",
+    "cvc": "333",
+    "expm": "12",
+    "expy": "2026"
+}
