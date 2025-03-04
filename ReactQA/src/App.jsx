@@ -59,7 +59,7 @@ function App() {
           <button 
             key={i}
             className="square"
-            data-testid={`square-uwu-uwu-${i}`}
+            data-testid={`square-${i}`}
             onClick={() => handleClick(i)}
           >
             {square}
